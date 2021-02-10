@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "build-serve": "npx http-server build -o"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "svelte": "^3.32.2",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-svelte": "^3.5.2",
+    "@snowpack/plugin-vue": "^2.3.0",
+    "snowpack": "^3.0.1"
+  }
+}
