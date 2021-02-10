@@ -15,6 +15,7 @@
   "devDependencies": {
     "@snowpack/plugin-svelte": "^3.5.2",
     "@snowpack/plugin-vue": "^2.3.0",
-    "snowpack": "^3.0.1"
+    "husky": "^5.0.9",
+    "snowpack": "^3.0.11"
   }
 }
