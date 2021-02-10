@@ -11,5 +11,8 @@ module.exports = {
   // buildOptions: {
   //   baseUrl: './snowpack-multi-framework/',
   // },
+  buildOptions: {
+    baseUrl: '',
+  },
   plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-vue'],
 }
