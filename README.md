@@ -23,11 +23,21 @@ npm i react react-dom svelte vue
 npm i @snowpack/plugin-svelte @snowpack/plugin-vue -D
 ```
 
+> Code has not been included here, so you can use this repo as an example.
+
 - Add installed plugins to snowpack.config.js.
 - Update index.html to include root elements.
 - Create components for each framework. (In this example, "App" and a "Button" components were created for each framework.)
 - Update index.js to include render code for each framework. (In this case, "App" components for each, then a simple button.)
 - Create shared state and insure it gets passed down. (In this case, we are passing an "onChange" function and "counter" variable.)
+
+## Enable GitHub Pages deployment (optional)
+
+- Run `npm i gh-pages -D`
+- Add homepage and deploy script in package.json
+- Update snowpack.config.js to include buildOptions
+- Run `npm run build`
+- Run `npm run deploy`
 
 ---
 
