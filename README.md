@@ -33,11 +33,15 @@ npm i @snowpack/plugin-svelte @snowpack/plugin-vue -D
 
 ## Enable GitHub Pages deployment (optional)
 
-- Run `npm i gh-pages -D`
-- Add homepage and deploy script in package.json
-- Update snowpack.config.js to include buildOptions
-- Run `npm run build`
-- Run `npm run deploy`
+- Update snowpack.config.js to include buildOptions (baseUrl must match yours)
+- Add GitHub publish action file at .github/workflows/publish.yml.
+- Commit and push your code.
+
+> Optional for versioning
+
+- Add .env with version and updated variables
+- Add deploy script to update
+- Run `npm run deploy` before pushing.
 
 ---
 

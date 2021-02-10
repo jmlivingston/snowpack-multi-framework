@@ -2,13 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Starter Snowpack App" />
     <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/index.css" />
     <title>Snowpack - React, Svelte, and Vue</title>
   </head>
   <body>
-    <h1>Snowpack - React, Svelte, and Vue (v01)</h1>
+    <h1>
+      Snowpack - React, Svelte, and Vue (<a
+        href="https://github.com/jmlivingston/snowpack-multi-framework"
+        target="_blank"
+        >Source Code</a
+      >)
+    </h1>
     <p>Run simultaneously with shared state!</p>
     <hr />
     <p>Click buttons and watch console to see results.</p>
@@ -22,5 +29,9 @@
     <p>Console (<span id="counter">Shared Counter: 0</span>)</p>
     <div id="console"></div>
     <script type="module" src="%PUBLIC_URL%/index.js"></script>
+    <br />
+    <div style="text-align: center; color: #777">
+      v.%SNOWPACK_PUBLIC_VERSION% (%SNOWPACK_PUBLIC_UPDATED%)
+    </div>
   </body>
 </html>
