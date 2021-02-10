@@ -1,9 +1,15 @@
 <script>
   export let counter
   export let onClick
+  let localCounter = 0
 </script>
 
-<button on:click={onClick}>Svelte Button (Shared Counter: {counter})</button>
+<button
+  on:click={() => {
+    localCounter += 1
+    onClick()
+  }}>Svelte Button (Local: {localCounter} / Shared: {counter})</button
+>
 
 <style>
   button {

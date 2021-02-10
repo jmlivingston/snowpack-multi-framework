@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     /* ... */
     '@snowpack/plugin-svelte',
+    '@snowpack/plugin-vue',
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
