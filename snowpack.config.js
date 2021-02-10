@@ -1,7 +1,7 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   buildOptions: {
-    baseUrl: '/snowpack-multi-framework',
+    baseUrl: '',
   },
   plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-vue'],
 }
