@@ -1,29 +1,22 @@
 <template>
-  <!-- TODO: Fix so we can use style tag -->
-  <button
-    @click="onHandleClick"
-    style="
-      background-color: #41b884;
-      border-radius: 10px;
-      border: none;
-      color: #fff;
-      padding: 10px 16px;
-    "
-  >
+  <button @click="onHandleClick" :class="styles.button">
     Vue Button (Local: {{ localCounter.toString() }} / Shared: {{ counter }})
   </button>
 </template>
 
 <script>
+import styles from './VueButton.module.css'
 export default {
   name: 'VueButton',
   methods: {
     onHandleClick() {
       this.localCounter += 1
+      this.onClick()
     },
   },
   data: () => ({
     localCounter: 0,
+    styles,
   }),
   props: {
     counter: Number,
@@ -31,3 +24,7 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+@import './VueButton.module.css';
+</style>

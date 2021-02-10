@@ -5,6 +5,7 @@
 </script>
 
 <button
+  class="button"
   on:click={() => {
     localCounter += 1
     onClick()
@@ -12,11 +13,7 @@
 >
 
 <style>
-  button {
+  .button {
     background-color: #ff3e00;
-    border-radius: 10px;
-    border: none;
-    color: #fff;
-    padding: 10px 16px;
   }
 </style>

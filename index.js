@@ -8,7 +8,7 @@ import AppVue from './AppVue.vue'
 let appSvelte
 let appVue
 let counter = 0
-const vueProps = reactive({ counter })
+const vueProps = reactive({ counter, onClick: () => updateCounter('Vue') })
 const consoleElement = document.getElementById('console')
 
 function updateCounter(message) {

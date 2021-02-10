@@ -1,5 +1,5 @@
 <template>
-  <VueButton :counter="counter" />
+  <VueButton :counter="counter" :onClick="onClick" />
 </template>
 
 <script>
@@ -12,6 +12,7 @@ export default {
   },
   props: {
     counter: Number,
+    onClick: Function,
   },
 }
 </script>
