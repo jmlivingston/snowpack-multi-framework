@@ -34,7 +34,10 @@ npm i @snowpack/plugin-svelte @snowpack/plugin-vue -D
 ## Enable GitHub Pages deployment (optional)
 
 - Run `npm i gh-pages -D`
-- Add deploy script in package.json
+- Add homepage and deploy script in package.json
+- Update snowpack.config.js to include buildOptions
+- Run `npm run build`
+- Run `npm run deploy`
 
 ---
 

@@ -9,7 +9,7 @@ module.exports = {
   //   baseUrl: '',
   // },
   buildOptions: {
-    baseUrl: '/snowpack-multi-framework',
+    baseUrl: '/snowpack-multi-framework/',
   },
   plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-vue'],
 }
