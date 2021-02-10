@@ -3,6 +3,8 @@ export { r as default } from './common/index-e66f0a38.js';
 
 
 
+var Suspense = react.Suspense;
 var createElement = react.createElement;
+var lazy = react.lazy;
 var useState = react.useState;
-export { createElement, useState };
+export { Suspense, createElement, lazy, useState };
