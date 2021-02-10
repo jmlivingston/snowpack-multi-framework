@@ -1,8 +1,0 @@
-{
-  "imports": {
-    "react": "./react.js",
-    "react-dom": "./react-dom.js",
-    "svelte/internal": "./svelte/internal.js",
-    "vue": "./vue.js"
-  }
-}
