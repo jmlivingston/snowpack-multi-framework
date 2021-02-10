@@ -1,5 +1,4 @@
 {
-  "homepage": "https://jmlivingston.github.io/snowpack-multi-framework",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
