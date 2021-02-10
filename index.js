@@ -1,9 +1,9 @@
 import { createElement } from './_snowpack/pkg/react.js'
 import { render } from './_snowpack/pkg/react-dom.js'
 import { createApp, h, reactive } from './_snowpack/pkg/vue.js'
-import AppReact from './AppReact.js'
-import AppSvelte from './AppSvelte.svelte.js'
-import AppVue from './AppVue.vue.js'
+import AppReact from './components/app/AppReact.js'
+import AppSvelte from './components/app/AppSvelte.svelte.js'
+import AppVue from './components/app/AppVue.vue.js'
 
 let appSvelte
 let appVue
@@ -13,8 +13,7 @@ const consoleElement = document.getElementById('console')
 
 function updateCounter(message) {
   counter = counter + 1
-  document.getElementById('counter').innerHTML = `Shared Counter: ${counter}`
-  console.log(document.getElementById('counter'))
+  document.getElementById('counter').innerText = `Shared Counter: ${counter}`
   // Update console
   const messageElement = document.createElement('div')
   messageElement.innerHTML = `${message} - ${
