@@ -9,7 +9,8 @@
   on:click={() => {
     localCounter += 1
     onClick()
-  }}>Svelte Button (Local: {localCounter} / Shared: {counter})</button
+  }}
+  >Svelte Button (Local Counter: {localCounter} / Shared Counter: {counter})</button
 >
 
 <style>

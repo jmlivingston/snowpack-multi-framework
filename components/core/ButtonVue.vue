@@ -1,13 +1,14 @@
 <template>
   <button @click="onHandleClick" :class="styles.button">
-    Vue Button (Local: {{ localCounter.toString() }} / Shared: {{ counter }})
+    Vue Button (Local Counter: {{ localCounter.toString() }} / Shared Counter:
+    {{ counter }})
   </button>
 </template>
 
 <script>
-import styles from './VueButton.module.css'
+import styles from './ButtonVue.module.css'
 export default {
-  name: 'VueButton',
+  name: 'ButtonVue',
   methods: {
     onHandleClick() {
       this.localCounter += 1
@@ -24,7 +25,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-@import './VueButton.module.css';
-</style>

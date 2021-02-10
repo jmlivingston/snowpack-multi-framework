@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import styles from './ReactButton.module.css'
+import styles from './ButtonReact.module.css'
 
-function ReactButton({ counter, onClick }) {
+function ButtonReact({ counter, onClick }) {
   const [localCounter, setLocalCounter] = useState(0)
 
   return (
@@ -11,9 +11,9 @@ function ReactButton({ counter, onClick }) {
         onClick()
         setLocalCounter(localCounter + 1)
       }}>
-      React Button (Local: {localCounter} / Shared: {counter})
+      React Button (Local Counter: {localCounter} / Shared Counter: {counter})
     </button>
   )
 }
 
-export default ReactButton
+export default ButtonReact
